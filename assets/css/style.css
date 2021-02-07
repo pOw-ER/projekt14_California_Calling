@@ -247,7 +247,6 @@ main section:nth-of-type(3)>div {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
 }
 
 main section:nth-of-type(3)>div div:nth-of-type(1) {
@@ -279,7 +278,9 @@ main section:nth-of-type(3) img:nth-of-type(2){
   width: 70%;
   margin-bottom: -100px;
 }
-
+/* ======================================================================================================================================
+                                     FOOTER
+====================================================================================================================================== */
 footer {
   margin-top: 150px;
   padding: 50px 10%;
@@ -382,4 +383,102 @@ footer>div:nth-of-type(3) div:nth-of-type(2) ul li {
 }
 footer>div:nth-of-type(3) div:nth-of-type(2) img {
   width: 75px;
+}
+
+
+/* ======================================================================================================================================
+                                      MEDIA QUERIES
+====================================================================================================================================== */
+
+@media (max-width: 768px) {
+/* ======================================================================================================================================
+                                                  FOOTER
+====================================================================================================================================== */
+
+  footer>div:nth-of-type(1) {
+    display: none;
+  }
+  footer>div:nth-of-type(2) {
+    width: 100%;
+  }
+  /* ======================================================================================================================================
+                                                  MAIN UND SECTION 2-3 (Golden Bear and poppy Bear)
+====================================================================================================================================== */
+
+  main section:nth-of-type(3)>div {
+    flex-wrap: wrap;
+  }
+  main section:nth-of-type(3)>div div:nth-of-type(1) {
+    width: 100%;
+    margin: 0 auto;
+  }
+  main section:nth-of-type(3)>div div:nth-of-type(2) {
+    width: 100%;
+    margin: 0 10%;
+  }
+  main section:nth-of-type(3) img:nth-of-type(1){
+    position: static;
+    width: 90%;
+    margin: 50px auto;
+  }
+  main section:nth-of-type(3) img:nth-of-type(2){
+    width: 90%;
+    margin: 50px auto;
+  }
+  main section:nth-of-type(2)>div div:nth-of-type(1) {
+    width: 100%;
+  }
+  main section:nth-of-type(2)>div div:nth-of-type(2) {
+    width: 100%;
+  }
+  main section:nth-of-type(2) img:nth-of-type(1){
+    display: block;
+    width: 90%;
+    margin: 50px auto;
+  }
+  main section:nth-of-type(2) img:nth-of-type(2){
+    display: block;
+    width: 70%;
+    margin: 50px auto;
+  }
+  /* ======================================================================================================================================
+                                                  MAIN UND SECTION (STUCK IN THE MIDDLE)
+====================================================================================================================================== */
+
+  main section:nth-of-type(1) div:nth-of-type(1) h2{
+    width: 90%;
+    font-size: 4rem;
+  }
+  main section:nth-of-type(1) div:nth-of-type(1) p{
+    width: 90%;
+  }
+  main section:nth-of-type(1) div:nth-of-type(2) p{
+    width: 90%;
+  }
+  main section:nth-of-type(1) img {
+    width: 50% !important;
+    margin: 50px auto !important;
+  }
+/* ======================================================================================================================================
+                                                  HEADER
+====================================================================================================================================== */
+
+  header>div:nth-of-type(3) img {
+    display: none;
+  }
+  header>div:nth-of-type(3) span {
+    font-size: 1.2rem;
+  }
+  header>div:nth-of-type(3) h1 {
+    font-size: 5.5rem;
+  }
+  header>h1 {
+    font-size: 5rem;
+    margin-left: 7%;
+    margin-bottom: 150px;
+  }
+  header>h2 {
+    font-size: 4.2rem;
+  }
+
 }
